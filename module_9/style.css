@@ -86,16 +86,22 @@ courses style
 .courses{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
+    grid-column-gap: 15px;
 }
 .course .course-banner img{
     width: 224px;
     height:104px;
 }
+.course-detail{
+    grid-column-gap: 15px;
+    margin-left: 6px;
+}
 
 .course-title{
+    display: block;
     font-size: 16px;
     text-align:center;
+    
     
 }
 .course-info{
@@ -110,4 +116,12 @@ courses style
 }
 .fa-star.empty{
     color:#AEAEAE;
+}
+/* media queries */
+@media only screen and (max-width:688px){
+    .player{
+        background-color: red;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
 }
