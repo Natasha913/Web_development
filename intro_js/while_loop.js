@@ -2,6 +2,10 @@ var i = 0;
 
 while (i < 7) {
       console.log('XYZ');
+      if (i==4){
+          console.log('right');
+          break;
+      }
       i++;
 }
 
